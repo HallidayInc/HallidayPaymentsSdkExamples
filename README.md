@@ -4,7 +4,9 @@ Example apps for building onramps or cross-chain swaps, powered by [Halliday](ht
 
 ### Example App Code
 - React.js Example `/react/index.jsx`
+  - This example creates a swap from USDC on Base to IP on Story.
 - No frameworks JS example `/vanilla-js/app.js`
+  - This example creates an onramp from fiat to USDC on Base.
 
 ### How to Run
 
