@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  margin: auto;
+  width: max-content;
+}
+
+iframe {
+  border: none;
+}
