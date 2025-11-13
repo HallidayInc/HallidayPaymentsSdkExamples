@@ -1,5 +1,5 @@
 {
-  "name": "halliday-pyments-sdk-workshop",
+  "name": "halliday-payments-sdk-workshop",
   "version": "1.0.0",
   "description": "Workshop for building onramps and cross-chain swaps with Halliday",
   "scripts": {
