@@ -5,6 +5,7 @@ Example apps for building onramps or cross-chain swaps, powered by [Halliday](ht
 ### Example App Code
 - React.js Example `/react/index.jsx`
   - This example creates a swap from USDC on Base to IP on Story.
+  - **Reboot the server to rebuild React app after any code changes**
 - No frameworks JS example `/vanilla-js/app.js`
   - This example creates an onramp from fiat to USDC on Base.
 
@@ -35,3 +36,5 @@ npm start
 > React.js example app:
 > http://localhost:8080/react/
 ```
+
+Remember to reboot the local server after any React app code changes to rebuild the app (ctrl-c to close in terminal and then `npm start` again).
