@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     alert('HALLIDAY_API_KEY is missing!');
   }
 
+  await hallidayPayments.initializeClient({
+    apiKey: HALLIDAY_API_KEY,
+    onReady: () => { console.log('Preloaded and ready') }, // optional
+    onError: (error) => { console.error(error) }, // optional
+  });
+
   await hallidayPayments.openHallidayPayments({
     apiKey: HALLIDAY_API_KEY,
     // USDC on Base

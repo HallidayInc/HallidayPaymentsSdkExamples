@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@halliday-sdk/payments": "^2.1.0",
+    "@halliday-sdk/payments": "^2.7.0",
     "esbuild": "^0.27.0",
     "express": "^5.1.0",
     "react": "^18.2.0",
