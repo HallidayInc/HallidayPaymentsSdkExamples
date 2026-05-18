@@ -8,10 +8,15 @@
 </head>
 
 <body>
-  <div id="halliday"></div>
+  <button id="halliday">Open Halliday</button>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@halliday-sdk/payments@2.1.0/dist/paymentsWidget/index.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@halliday-sdk/payments@latest/dist/paymentsWidget/index.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@halliday-sdk/payments@latest/dist/paymentsWidget/ethers/index.umd.min.js"></script>
+<script>
+  window.connectSigner = window.ethers.connectSigner;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/ethers@6/dist/ethers.umd.min.js"></script>
 <script type="application/javascript" src="./app.js"></script>
 
 </html>
