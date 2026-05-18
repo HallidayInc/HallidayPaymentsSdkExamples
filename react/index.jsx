@@ -39,7 +39,7 @@ function App() {
             userWallet,
             destinationAddress: address,
           });
-      }}>
+        }}>
         Open Halliday
       </button>
     </div>

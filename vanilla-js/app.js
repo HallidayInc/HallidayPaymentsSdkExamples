@@ -5,6 +5,8 @@ document.getElementById('halliday').addEventListener('click', async () => {
     alert('HALLIDAY_API_KEY is missing!');
   }
 
+  const hallidayOutputs = ['base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913'];
+
   window.ethereum = window.ethereum || window.phantom.ethereum;
   const [address] = await window.ethereum.request({ method: 'eth_requestAccounts' });
 
@@ -12,10 +14,15 @@ document.getElementById('halliday').addEventListener('click', async () => {
     new ethers.BrowserProvider(window.ethereum).getSigner(),
   );
 
-  hallidayPayments.openHallidayPayments({
+  await hallidayPayments.initializeClient({
+    apiKey: HALLIDAY_API_KEY,
+    outputs: hallidayOutputs,
+  });
+
+  await hallidayPayments.openHallidayPayments({
     apiKey: HALLIDAY_API_KEY,
     // USDC on Base
-    outputs: ['base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913'],
+    outputs: hallidayOutputs,
     userWallet,
     destinationAddress: address,
   });
